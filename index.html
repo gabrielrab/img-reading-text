@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Reading</title>
+    <style>
+        video, canvas{
+            position: absolute;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <video id="video" width="300" heigth="300" preload autoplay loop muted></video>
+    <canvas id="canvas" width="300" heigth="300"></canvas>
+    
+    <script src="build/tracking.js"></script>
+    <script>
+        function init(){
+            const video = document.getElementById("video"); 
+            const canvas = document.getElementById("canvas");
+            const context = canvas.context("2d");
+
+            
+            
+        }
+        window.onload =  init();
+    
+    </script>
+</body>
+</html> 
